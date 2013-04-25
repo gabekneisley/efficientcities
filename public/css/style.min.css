@@ -7,6 +7,7 @@
 .primary-nav{list-style-type:none;margin:0;}
 .primary-footer{background:url('/img/mochaGrunge.png');height:140px;}
 .cta{margin:0 auto 200px;max-width:500px;}
+legend small{font-size:60%;line-height:.9;}
 .colophon{list-style-type:none;margin:0;text-align:center;color:#aaaaaa;}.colophon li{display:inline;}.colophon li:before{content:'\2003 \2219 \2003';font-weight:bold;color:#b3b3b3;}
 .colophon li:first-of-type:before{content:'';}
 .colophon a{color:#aaaaaa;}
