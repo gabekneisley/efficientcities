@@ -1,0 +1,73 @@
+@import "bootstrap/variables.less"; // Modify this for custom colors, font-sizes, etc
+// -------------------------------------
+@import "variable-overrides.less";
+// -------------------------------------
+@import "bootstrap/mixins.less";
+// -------------------------------------
+@import "mixin-overrides.less";
+// -------------------------------------
+
+
+.primary {
+  height: 140px;
+  padding-top: 35px;
+}
+
+.primary-logo {
+  display: block;
+	background: no-repeat url('/img/efficientcities-logo.png');
+  width: 600px;
+  height: 68px;
+  h1 {
+    position: absolute;
+    left: -10000;
+    top: -10000;
+    visibility: hidden;
+  }
+}
+
+.primary-nav {
+  list-style-type: none;
+  margin: 0;
+}
+
+.primary-footer {
+  background: url('/img/mochaGrunge.png');
+  height: 140px;
+}
+
+.cta {
+  margin: 0 auto 200px;
+  max-width: 500px;
+}
+
+legend small {
+  font-size: 60%;
+  line-height: .9;
+}
+
+.colophon {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+  color: @footer-nav-text;
+
+  li {
+    display: inline;
+    &:before {
+      content: '\2003 \2219 \2003';
+      font-weight: bold;
+      color: lighten(#000, 70%);
+    }
+  }
+
+  li:first-of-type {
+    &:before {
+      content: '';
+    }
+  }
+
+  a {
+    color: @footer-nav-link;
+  }
+}
